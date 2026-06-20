@@ -12,6 +12,8 @@ html {
 }
 
 .navbar {
+  position: fixed;
+  top: 0%;
   position: sticky;
   z-index: 1000;
   display: flex;
