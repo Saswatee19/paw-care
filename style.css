@@ -58,24 +58,35 @@ p{
     margin: 20px;
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 40px;
+    margin: 50px;
 }
 .box{
-    border-style: solid;
-    background-color: rgb(255, 223, 229);
-    border-radius: 20px;
-    padding: 15px;
-    cursor:pointer;
-    width:45%;
+    background-color:pink;
+    text-align: center;
+    border-radius: 30px;
+    overflow:hidden;
     margin: 10px;
+    padding: 50px;
+}
+.box:hover{
+    transform: scale(1.03);
+    transition:0.3s;
 }
 .left{
     animation:slideLeft 10s ease infinite alternate;
 }
 .right{
     animation:slideRight 10s ease infinite alternate;
+}
+.up{
+    animation: slideUp 10s ease infinite alternate;
+}
+
+.down{
+    animation: slideDown 10s ease infinite alternate;
 }
 .our-service{
     text-align: center;
@@ -100,8 +111,26 @@ p{
         opacity: 1;
     }
 }
-.box:hover{
-    background-color: pink;
+@keyframes slideUp{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 #header3{
     background-color: yellow;
@@ -149,6 +178,7 @@ p{
     display: grid;
     grid-template-columns:repeat(4,1fr);
     gap: 40px;
+    margin: 50px;
 }
 .doctor-availability{
     text-align: center;
@@ -169,6 +199,7 @@ p{
 .small-box-2{
     background-color:pink;
     padding: 25px;
+    height: 175px;
 }
 .small-box-3{
     background-color:lightgreen;
@@ -178,6 +209,7 @@ p{
 .small-box-4{
     background-color:pink;
     padding: 25px;
+    height: 175px;
 }
 .small-box-5{
     background-color:lemonchiffon;
@@ -187,6 +219,7 @@ p{
 .small-box-6{
     background-color:pink;
     padding: 25px;
+    height: 175px;
 }
 .small-box-7{
     background-color:lime;
@@ -196,6 +229,7 @@ p{
 .small-box-8{
     background-color:pink;
     padding: 25px;
+    height: 175px;
 }
 #left-doctor{
     animation:slideLeft 10s ease;
@@ -228,11 +262,12 @@ p{
 }
 .grid-containers{
     display: grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(3,1fr);
     gap: 40px;
+    margin: 50px;
 }
 .items{
-    background-color:lightblue;
+    background-color:pink;
     text-align: center;
     overflow:hidden;
     border-radius: 50px;
@@ -328,5 +363,15 @@ p{
     }
     .grid-containers{
         grid-template-columns: 1fr;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .container > div:nth-child(odd){
+        animation: slideLeft 10s ease infinite alternate;
+    }
+
+    .container > div:nth-child(even){
+        animation: slideRight 10s ease infinite alternate;
     }
 }
