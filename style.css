@@ -37,6 +37,7 @@ html {
 .logo-icon{
     fill: #000000;
     transition: transform 0.4s ease;
+    opacity: 1;
 }
 .logo:hover .logo-icon{
     fill: #ff5733;
@@ -259,7 +260,7 @@ html {
   border-radius: 24px;
   padding: 24px;
   max-width: 400px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); 
+  box-shadow: 0 20px 20px #ff5733; 
   font-family: system-ui, -apple-system, sans-serif;
   animation: floatAnimation 3s ease-in-out infinite;
   transition: opacity 0.6s ease-in-out, filter 0.5s ease-in-out;
@@ -402,4 +403,5 @@ html {
 .mainright:hover img{
   filter: blur(5px);
 }
-/* more code below */
+
+
