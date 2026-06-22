@@ -456,6 +456,76 @@ html {
   filter: blur(5px);
 }
 
+/* Call-To-Action */
+
+.booking {
+  background: #a53860 !important;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 28px;
+  margin: 0 8vw 80px;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking * {
+  background: transparent;
+}
+
+.booking h2 {
+  color: #ffffff !important;
+  background: transparent !important;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.booking p {
+  color: rgba(255,255,255,0.9) !important;
+  background: transparent !important;
+  opacity: 0.85;
+  max-width: 440px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
+.booking-actions {
+  background: transparent !important;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-aqua {
+  background: #87f5fb !important;
+  color: #2a1520 !important;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(135,245,251,0.3);
+}
+
+.btn-outline-white {
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.5);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-outline-white:hover {
+  border-color: #ffffff;
+  background: rgba(255,255,255,0.1) !important;
+}
 /* FOOTER */
 
 footer {
