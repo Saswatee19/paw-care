@@ -479,8 +479,8 @@ html {
   justify-content: center;
   background-color: #ff5733;
   border-radius: 50% 50%;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   transition: border 0.3s ease-in-out;
 }
 .footer-info{

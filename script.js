@@ -17,19 +17,19 @@ let cat = document.querySelector(".cat");
 
 let tm1 = setTimeout(()=>{
     bird.style.display = "none"
-}, 500);
+}, 800);
 
 let tm2 = setTimeout(()=>{
     dog.style.display = "flex"
-}, 500);
+}, 800);
 
 let tm3 =setTimeout(()=>{
     dog.style.display = "none"
-}, 1000);
+}, 1600);
 
 let tm4 = setTimeout(()=>{
     cat.style.display = "flex"
-}, 1000);
+}, 1600);
 
 let preloader = document.querySelector(".preloader");
 
