@@ -914,7 +914,7 @@ footer *,
   .hamburger-text {
     z-index: 1002;
     position: fixed;
-    top: 0.1em;
+    top: 0;
     right: -100dvw; 
     width: 100dvw;
     height: 100dvh;
@@ -923,10 +923,11 @@ footer *,
     flex-direction: column;
     gap: 2.5rem;
     justify-content: flex-start;
-    padding: 1.5em;
+    padding: 2em 1.5em;
     font-size: x-large;
     box-shadow: -2px 0 5px rgba(243, 4, 4, 0.1);
     transition: right 0.3s ease-in-out;
+    box-sizing: border-box;
   }
   .side{
     gap: 5em;
@@ -942,45 +943,48 @@ footer *,
   .hamburger-icon.fade_out{
     display: none;
   }
+  .text-wrapper{
+    width: 100%;
+    height: auto;
+    font-size: 2.5rem;
+  }
+  .swap-link{
+    font-size: 2.5rem;
+  }
   
   .main{
     display: flex;
     flex-direction: column;
-    margin-left: -30%;
+    width: 100%;
+    padding: 2em 1.5em;
+    margin-left: 0;
   }
   .mainright img{
     display: none;
   }
-  .pet-card{
-    position: static;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    margin-left: -30%;
-    max-width: 110%;
-    opacity: 1;
-  }
+  .pet-card {
+  position: static;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  margin: 1.5em auto; 
+  max-width: 100%;    
+  opacity: 1;
+}
   .footer-info{
     position: static;
     top: auto;
     bottom: auto;
     left: auto;
     right: auto;
-
     margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-   .footer-info{
-    margin-left: 30%;
+    margin-left: 0;
     display: grid;
-    grid-template-columns: repeat(2, 8fr);
-    grid-template-rows: repeat(2, 8fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    width: 160%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
    }
    .info-box{
     position: static;
@@ -1007,14 +1011,19 @@ footer *,
   .section-sub {
     font-size: 15px;
   }
-  .testimonials-grid {
-    width: 100%;
-    margin: 40px auto 80px;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  #reviews .testimonials-grid, .testimonials-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 40px auto 80px !important;
+    gap: 20px !important;
   }
-  .testimonial-card {
-    padding: 24px;
+  #reviews .testimonial-card, .testimonial-card {
+    padding: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+    box-sizing: border-box !important;
   }
 
 
@@ -1066,53 +1075,5 @@ footer *,
     align-items: flex-start;
     gap: 12px;
   }
-  /* TESTIMONIALS */
-  .testimonials-section {
-    padding: 100px 40px;
-  }
-  .section-title {
-    font-size: 44px;
-    margin-top: 120px;
-  }
-  .testimonials-grid {
-    width: 100%;
-    margin: 50px auto 120px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
-
-  /* CTA */
-  .booking {
-    margin: 0 40px 60px;
-    padding: 56px 32px;
-  }
-  .booking h2 {
-    font-size: 2.2rem;
-  }
-  .booking p {
-    max-width: 600px;
-  }
-  .booking-actions {
-    justify-content: center;
-  }
-
-
-  /* FOOTER */
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-  .footer-newsletter {
-    max-width: 100%;
-  }
-  .footer-brand p,
-  .newsletter-desc {
-    max-width: 100%;
-  }
-  .footer-bottom {
-    gap: 16px;
-  }
-
 
 }
