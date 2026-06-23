@@ -4,19 +4,19 @@ let cat = document.querySelector(".cat");
 
 let tm1 = setTimeout(()=>{
     bird.style.display = "none"
-}, 300);
+}, 800);
 
 let tm2 = setTimeout(()=>{
     dog.style.display = "flex"
-}, 300);
+}, 800);
 
 let tm3 =setTimeout(()=>{
     dog.style.display = "none"
-}, 600);
+}, 1600);
 
 let tm4 = setTimeout(()=>{
     cat.style.display = "flex"
-}, 800);
+}, 1600);
 
 
 let preloader = document.querySelector(".preloader");
