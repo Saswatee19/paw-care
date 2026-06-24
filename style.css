@@ -222,7 +222,7 @@ html {
 }
 .wagging-text {
   display: inline-block;
-  animation: wag 0.7s infinite;
+  animation: wag 0.93s infinite;
 }
 @keyframes wag {
   0% {
@@ -1245,7 +1245,7 @@ footer *,
   width: 90em;
   height: 210px; 
   position: absolute; 
-  margin-top: 33%;
+  margin-top: 36%;
   display: flex; 
   align-items: center;
   justify-content: space-around;

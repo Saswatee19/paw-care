@@ -37,4 +37,34 @@ setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
 }, 2000)
 
+// form validation
 
+let form = document.querySelector("form");
+let nm = document.querySelector("#name");
+let phn = document.querySelector("#phn");
+let msg = document.querySelector("#msg");
+
+form.addEventListener('submit', (dets)=>{
+    dets.preventDefault();
+    let isValid = true;
+    if(nm.value.length <= 2){
+        document.querySelector(".error1").style.display = "initial";
+        isValid = false;
+    }if(phn.value.length != 10){
+        document.querySelector(".error2").style.display = "initial";
+        isValid = false;
+    }if(msg.value.length > 200){
+        document.querySelector(".error3").style.display = "initial";
+        isValid = false;
+    }if(isValid) {
+        document.querySelector(".confirm").style.display = "flex";
+        setTimeout(()=>{
+            document.querySelector(".confirm").style.display = "none";
+        },5000);
+        document.querySelector(".error1").style.display = "none";
+        document.querySelector(".error2").style.display = "none";
+        document.querySelector(".error3").style.display = "none";
+        form.reset();
+    }
+    
+});

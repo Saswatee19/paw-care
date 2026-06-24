@@ -60,6 +60,28 @@ html {
     visibility: hidden;
     pointer-events: none;
 }
+.confirm{
+  position: fixed;
+  left: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background-color: #a53860;
+  color: #fcfefe;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  transition: display 0.3s ease-in-out;
+}
+.content{
+  padding-top: 20%;
+}
+.short-msg {
+  display: none;
+}
 
 .navbar {
   width: 100%;
@@ -335,6 +357,18 @@ button,
     box-shadow: 0 10px 30px rgba(42, 21, 32, 0.1);
     height: 400px;
 }
+.error1{
+  display: none;
+  color: red;
+}
+.error2{
+  display: none;
+  color: red;
+}
+.error3{
+  display: none;
+  color: red;
+}
 
 footer {
   background-color: #2a1520 !important;
@@ -570,6 +604,18 @@ footer *,
 }
 
 @media (max-width: 480px) {
+
+  /* .content{
+    display: none;
+  } */
+  /* .short-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .confirm img{
+    width: 50dvh;
+  }
   
   .navright {
     display: none;
