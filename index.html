@@ -3,76 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinary Clinic</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpg" href="Images/Veterinary Clinic.jpg">
+    <title>landing page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J+Guides:ital@0;1&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=list_arrow" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close_small" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=stethoscope" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <!-- <section> page 1</section> -->
-    <header id="main" style="display: flex; background-color: yellow; justify-content: space-between;">
-        <nav id="navLeft">link 1</nav>
-        <nav id="navRight" style="display: flex; background: magenta;justify-content: space-between; gap: 20px
-        ;">
-            <nav class="del">link 2</nav>
-            <nav class="del">link 3</nav>
-            <nav class="del">link 4</nav>
-        </nav>
-    </header>
-    <div style="height: 90vh; width: 100%; background-color: aquamarine;">
-        landing page main part with appealing design to attract customers
-    </div>
-    <footer style="background-color: black; width: 100%; height: 100px; color: white;">
-    lower part of page 1
-    </footer>
 
-    <!-- <section>page 2</section> -->
-    <header id="header2">
-        page 2 ka navbar
-    </header>
-    <main id="main2">
-        <p id="p2"><b>WHAT WE DO</b></p>
-        <h1 class="our-service">OUR SERVICE</h1>
-        <p><big>From nose to tail — we cover every aspect of your pet's wellbeing under one roof.</big> </p>
-        <div class="container">
-            <div class="box left">
-                <big>🩺</big>
-                <h3>Wellness Check-Ups</h3>
-                <p><i>Annual and bi-annual physicals to keep your pet in peak condition, with detailed health reports and personalised care plans.</i></p>
+    <!-- preloader -->
+
+    <div class="preloader">
+       <div class="bird"><i class="fa-solid fa-dove fa-5x fa-beat" style="color: rgb(241, 228, 243)"></i></div>
+       <div class="dog"><i class="fa-solid fa-dog fa-5x fa-beat" style="color: rgb(241, 228, 243);"></i></div>
+       <div class="cat"><i class="fa-solid fa-cat fa-5x fa-beat" style="color: rgb(241, 228, 243);"></i></div>
+    </div>
+
+
+	<!-- navbar -->
+
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+                 <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg class="logo-icon" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g>
+	<g>
+		<path d="M217.592,177.33c-9.281-4.843-15.688-11.31-15.542-21.778c0-29.971-24.296-54.267-54.267-54.267
+			s-54.267,24.297-54.267,54.267c0.297,10.065-4.255,17.641-12.911,22.785c-20.12,11.958-35.002,41.52-35.002,51.807
+			c0,29.971,24.296,54.267,54.267,54.267c3.697,0,7.307-0.37,10.796-1.074c24.648-4.978,49.649-4.931,74.303,0.015
+			c3.467,0.695,7.054,1.061,10.726,1.061c29.971,0,54.268-24.296,54.268-54.267C249.964,213.29,237.001,187.458,217.592,177.33z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M209.187,0.451c-18.792-4.414-41.67,24.543-46.084,43.337c-4.415,18.791,7.24,37.605,26.034,42.019
+			c18.792,4.414,37.606-7.241,42.02-26.034C235.571,40.981,227.979,4.866,209.187,0.451z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M274.937,83.318c-17.01-3.996-37.717,22.216-41.713,39.225c-3.996,17.01,6.555,34.038,23.565,38.034
+			c17.01,3.996,34.038-6.555,38.034-23.565C298.819,120.002,291.947,87.313,274.937,83.318z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M132.476,43.787c-4.413-18.792-27.291-47.75-46.083-43.336C67.6,4.866,60.008,40.98,64.422,59.772
+			c4.414,18.793,23.228,30.449,42.02,26.035C125.234,81.393,136.89,62.58,132.476,43.787z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M63.819,122.543c-3.996-17.01-24.702-43.221-41.713-39.225C5.096,87.314-1.775,120.002,2.22,137.013
+			c3.996,17.01,21.024,27.56,38.034,23.565C57.265,156.582,67.814,139.554,63.819,122.543z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M432.548,404.918c-9.281-4.843-15.688-11.31-15.542-21.778c0-29.971-24.296-54.267-54.267-54.267
+			s-54.267,24.296-54.267,54.267c0.297,10.065-4.255,17.641-12.911,22.785c-20.12,11.958-35.002,41.52-35.002,51.807
+			c0,29.971,24.296,54.267,54.267,54.267c3.697,0,7.307-0.37,10.796-1.074c24.648-4.978,49.649-4.931,74.303,0.015
+			c3.467,0.695,7.054,1.061,10.726,1.061c29.971,0,54.267-24.296,54.267-54.267C464.92,440.878,451.957,415.046,432.548,404.918z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M424.143,228.039c-18.792-4.414-41.67,24.543-46.084,43.337c-4.414,18.791,7.242,37.605,26.034,42.019
+			c18.792,4.414,37.606-7.241,42.02-26.034C450.527,268.568,442.935,232.453,424.143,228.039z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M489.893,310.906c-17.01-3.996-37.717,22.216-41.713,39.225c-3.996,17.009,6.555,34.038,23.565,38.034
+			c17.01,3.996,34.038-6.555,38.034-23.565C513.775,347.59,506.903,314.901,489.893,310.906z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M347.433,271.374c-4.414-18.792-27.291-47.751-46.084-43.336c-18.792,4.415-26.384,40.53-21.97,59.323
+			c4.414,18.792,23.227,30.448,42.02,26.034C340.191,308.979,351.847,290.167,347.433,271.374z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M278.775,350.131c-3.996-17.01-24.703-43.221-41.713-39.225c-17.01,3.996-23.882,36.684-19.887,53.694
+			c3.995,17.01,21.024,27.56,38.034,23.565C272.221,384.169,282.77,367.141,278.775,350.131z"/>
+	</g>
+</g>
+</svg>
+             <div class="logo-text">PawCare</div>
+
+</a>
+           
+             
+        <div class="navright">
+            <a href="index.html" class="del"><span>🐾</span>Home</a>
+            <div class="del"><span>🐾</span>Services</div>
+            <a href="about.html" class="del"><span>🐾</span>About Us</a>
+            <div class="del"><span>🐾</span>Our Vets</div>
+            <a href="contact.html" class="del"><span>🐾</span>Contact Us</a>
+        </div>
+
+        <div class="hamburger">
+
+            <div class="hamburger-text">
+                <div class="close-icon"><i class="fa-solid fa-xmark" style="color: rgb(33, 2, 2);"></i></div>
+                <div class="side"><i class="fa-solid fa-paw" style="color: rgb(33, 2, 2);"></i> Home</div>
+                <div class="side"><i class="fa-solid fa-paw" style="color: rgb(33, 2, 2);"></i> Services</div>
+                <a href="about.html" class="side"><i class="fa-solid fa-paw" style="color: rgb(33, 2, 2);"></i> About Us</a>
+                <div class="side"><i class="fa-solid fa-paw" style="color: rgb(33, 2, 2);"></i> Our Vets</div>
+                <a href="contact.html" class="side"><i class="fa-solid fa-paw" style="color: rgb(33, 2, 2);"></i> Contact Us</a>
             </div>
-            <div class="box up">
-                <big>💉</big>
-                <h3>Vaccination & Prevention</h3>
-                <p><i>Tailored vaccination schedules, parasite prevention, and flea & tick treatments to protect your pet year-round.</i></p>
-            </div>
-            <div class="box right">
-                <big>🔬</big>
-                <h3>Diagostics & Imaging</h3>
-                <p><i>In-house lab tests, digital X-rays, ultrasound, and ECG for fast, accurate diagnosis — no referrals needed.</i></p>
-            </div>
-            <div class="box left">
-                <big>🏥</big>
-                <h3>Surgery & Recovery</h3>
-                <p><i>Spay/neuter, orthopaedic repair, soft-tissue procedures, and post-operative care in our sterile surgical suite.</i></p>
-            </div>
-            <div class="box down">
-                <big>🦷</big>
-                <h3>Dental Care</h3>
-                <p><i>Professional dental cleaning, tooth extraction, and oral health assessments — because healthy teeth mean a healthy pet.</i></p>
-            </div>
-            <div class="box right">
-                <big>🚨</big>
-                <h3>Emergency & Critical Care</h3>
-                <p><i>Round-the-clock emergency services with a dedicated ICU for critically ill patients. We're always here when you need us most.</i></p>
+            
+            <div class="hamburger-icon">
+                 <i class="fa-solid fa-bars-staggered fa-2x" style="color: rgb(33, 2, 2);"></i>
             </div>
         </div>
-    </main>
-    <footer style="background-color: black; color: white; width: 100%; height: 100px;" >
-        page 2 ka footer 
-    </footer>
 
-    <header id="header3">
-        page 3 ka navbar
+
     </header>
+
+    
+	
+
+	<!-- section1 -->
+
+
+
+    <main class="main">
+		<div class="mainleft">
+			<div class="mainlefttop">
+         <a href="#" class="swap-link">
+          <span class="text-wrapper">
+            <span class="line text-front" style="display: flex; flex-direction: column;">
+                <span style="color: #ff5733;">Healthy</span>
+                <span style="color: #ff5733;">care,</span>  
+            </span>
+            <span class="line text-back" style="display: flex; flex-direction: column;">
+                <span>Happy</span>
+                <span>Pets.</span>  
+            </span>
+          </span>
+         </a>
+        
+        </div>  
+        <div class="mainleftmid">
+             At PawCare, every <span class="wagging-text">tail-wag</span> matters. From routine check-ups to specialised surgery, our team treats your pet the way you would — with patience, love, and expertise.
+        </div>
+        <div class="mainleftbtm">
+            <a href="appointment.html">
+                <button class="btn">Book Appointment 📅</button>
+            </a>
+            
+        </div>
+		</div>
+        
+		<div class="mainright">
+			<div class="cat-container">
+            <img id="cat" src="https://png.pngtree.com/png-vector/20240131/ourmid/pngtree-cute-cartoon-cat-illustration-png-image_11576669.png" alt="cat" class="pet">
+			</div>
+			
+
+        <div class="pet-card">
+			<div class="card-header">
+				 <div class="profile-section">
+					<div class="avatar">🐶</div>
+                    <div class="pet-info">
+                       <h3 class="pet-name">Bruno</h3>
+                        <p class="pet-breed">Golden Retriever • 3 yrs</p>
+                    </div>
+				 </div>
+   
+                 <span class="badge-vaccinated">💉 Vaccinated today</span>
+            </div>
+			<div class="stats-grid">
+             <div class="stat-box">
+               <span class="stat-value">28 kg</span>
+               <span class="stat-label">Weight</span>
+             </div>
+             <div class="stat-box">
+               <span class="stat-value">38.4°C</span>
+               <span class="stat-label">Temp</span>
+             </div>
+             <div class="stat-box">
+              <span class="stat-value">102</span>
+              <span class="stat-label">Heart rate</span>
+             </div>
+             <div class="stat-box highlight-box">
+              <span class="stat-value">All</span>
+              <span class="stat-label">Vaccines up</span>
+             </div>
+            </div>
+            <div class="card-footer">
+              <span class="status-dot"></span>
+              <p class="status-text">Healthy — next visit in 6 months</p>
+            </div>
+		</div>
+
+        <div class="dog-container">
+          <img id="dog" src="https://png.pngtree.com/png-clipart/20230308/ourmid/pngtree-cartoon-dog-sticker-cute-puppy-png-image_6629456.png" alt="dog" class="pet">
+		 </div>
+		</div>
+        <div class="footer-info">
+            <div class="info-box">
+              <div class="info-bubble" id="info-bubble-1"><i class="fa-solid fa-paw fa-2x" style="color: rgb(240, 242, 244);"></i></div>
+              <div class="info-val">1500+</div>
+              <div class="info-text">Pets Treated</div>
+            </div>
+            <div class="info-box">
+               <div class="info-bubble" id="info-bubble-2"><i class="fa-solid fa-user-doctor fa-2x" style="color: rgb(240, 242, 244);"></i></div>
+               <div class="info-val">50+</div>
+               <div class="info-text">Expert Doctors</div>
+            </div>
+            <div class="info-box">
+               <div class="info-bubble" id="info-bubble-3"><i class="fa-regular fa-hospital fa-2x" style="color: rgb(240, 242, 244);"></i></div>
+               <div class="info-val">10+</div>
+               <div class="info-text">Care Centers</div>
+        </div>
+        <div class="info-box">
+            <div class="info-bubble" id="info-bubble-4"><i class="fa-regular fa-heart fa-2x fa-beat" style="color: rgb(240, 242, 244);"></i></div>
+            <div class="info-val">20+</div>
+            <div class="info-text">Years of Trust</div>
+        </div>
+    </div>
+    </main>
+  
+  <!-- section 2 -->
 
     <main id="main3">
         <h1 class="doctor-availability">DOCTOR'S AVAILABILITY</h1>
@@ -140,9 +304,7 @@
         </div>
     </main>
 
-    <header>
-        header page 3 ka 
-    </header>
+
     <main>
         <h1 class="pet-details">PET'S DETAIL</h1>
         <div class="grid-containers">
@@ -405,19 +567,124 @@
                 </div>
             </div>
         </div>
+    
+
+
+    
     </main>
+    
 
-    <!-- <section>page 3 : the submission page</section> -->
-     <header style="background-color: yellow; ">
-        navbar
-     </header>
-     <main style="height: 90vh; width: 100%; background-color: aquamarine;">
-        main space of page 3 containing link to connet to contact details page
-     </main>
-     <footer style="background-color: black; color: white; width: 100%; height: 100px;">
-        contains social media links of this particular site
-     </footer>
+<!-- section 3 -->
 
+     <!-- TESTIMONIALS -->
+    <section id="reviews">
+        <h2 class="section-title">What Pet Parents Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★☆</div>
+                <p>""The staff made Bruno feel comfortable from the moment we walked in. Every question was answered patiently.""</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar" style="background:#f1e4f3 !important;">&#128587;&#8205;&#9792;&#65039;</div>
+                    <div>
+                        <div class="reviewer-name">Tanushree Mohapatra</div>
+                        <div class="reviewer-pet">Golden Retriever</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"We had an emergency late at night and the team was incredibly calm and supportive. Luna recovered beautifully thanks to their care."</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar" style="background:#d8f9fb !important;">&#128587;&#8205;&#9794;&#65039;</div>
+                    <div>
+                        <div class="reviewer-name">Aditya Rath</div>
+                        <div class="reviewer-pet">Persian cat</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Finding a vet for rabbits isn't always easy. The team was gentle, knowledgeable, and took the time to explain everything clearly."</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar" style="background:#e0f8df !important;">&#128587;&#8205;&#9792;&#65039;</div>
+                        <div>
+                            <div class="reviewer-name">Lipsa Nayak</div>
+                            <div class="reviewer-pet">Rabbit</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BOOKING CTA -->
+
+    <div class="booking" id="book" style="background-color: #a53860;">
+        <h2>Trusted veterinary care for every stage of your pet's life</h2>
+        <p>Schedule a visit with our expert veterinarians and give your pet the care they deserve.</p>
+        <div class="booking-actions">
+        <a href="appointment.html" class="btn-aqua">📅 Book Appointment</a>
+        <a href="tel:+919876543210" class="btn-outline-white">📞 Contact Us</a>
+    </div>
+</div>
+     <!--footer-->
+     <footer style="background-color: #2a1520;">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">🐾 PawCare</a>
+                <p>Bhubaneswar's trusted veterinary hospital, offering compassionate and expert care for every kind of pet since 2006.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Wellness Check-Ups</a></li>
+                    <li><a href="#">Vaccination</a></li>
+                    <li><a href="#">Surgery</a></li>
+                    <li><a href="#">Diagnostics</a></li>
+                    <li><a href="#">Dental Care</a></li>
+                    <li><a href="#">Emergency</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Clinic</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Meet the Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Visit Us</h4>
+                <ul>
+                    <li><a href="#">Plot No. 215, Forest Park Road, Bhubaneswar, Odisha 751009</a></li>
+                    <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li><a href="mailto:hello@pawcare.in">hello@pawcare.in</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>NEWSLETTER</h4>
+                <p class="newsletter-desc">Subscribe to get updates and<br>pet care tips.</p>
+  
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" class="newsletter-input" placeholder="Your email" required>
+                    <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 PawCare Veterinary Hospital. All rights reserved.</span>
+            <span>Made with &#10084; for pets · <a href="#">Privacy Policy</a></span>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

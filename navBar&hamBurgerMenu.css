@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Sora", sans-serif;
+  background-color: #f1e4f3;
+  color: #2a1520;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1e4f3;
+  align-items: center;
+  padding: 1.5em;
+  height: 5em ;
+  border-bottom: 1px solid rgba(74, 21, 75, 0.15);
+  
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.logo-text{
+    font-size: 30px;
+    transition: transform 0.2s ease;
+}
+.logo-icon{
+    fill: #000000;
+    transition: transform 0.4s ease;
+    opacity: 1;
+}
+.logo:hover .logo-icon{
+    fill: #ff5733;
+    cursor: pointer;
+    transform: translateY(-6px) rotate(-10deg);
+}
+.logo-text:hover{
+    color: #ff5733;
+    cursor: pointer;
+    transform: translateY(6px) rotate(-5deg);
+}
+
+.navright {
+  display: flex;
+  font-size: 20px;
+  gap: 30px;
+}
+.del{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a1520;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    
+}
+.del span{
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.del:hover{
+    color: #ff5733;
+    cursor: pointer;
+    rotate: 2deg;
+    font-weight: 900;
+
+}
+.del:hover span{
+   opacity: 1;
+   transition: opacity 0.7s ease;
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  
+  .navright {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 20px; 
+    top: 1.5em;
+    z-index: 1001;
+    cursor: pointer;
+  }
+  .close-icon{
+    margin-right: 90%;
+  }
+  .hamburger-text {
+    z-index: 1002;
+    position: fixed;
+    top: 0;
+    right: -100dvw; 
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #f1e4f3;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    padding: 2em 1.5em;
+    font-size: x-large;
+    box-shadow: -2px 0 5px rgba(243, 4, 4, 0.1);
+    transition: right 0.3s ease-in-out;
+    box-sizing: border-box;
+    
+  }
+  .hamburger-text a.side{
+    text-decoration: none;
+    color: inherit;
+  }
+  .side{
+    gap: 5em;
+    border-bottom: 0.5px solid #1a111a;
+  }
+  .side:hover{
+    color: #ff5733;
+    font-weight: 700;
+  }
+  .hamburger-text.open{
+    right: 0;
+  }
+  .hamburger-icon.fade_out{
+    display: none;
+  }
+  .text-wrapper{
+    width: 100%;
+    height: auto;
+    font-size: 2.5rem;
+  }
+}  
