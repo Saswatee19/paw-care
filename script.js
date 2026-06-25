@@ -36,3 +36,28 @@ let preloader = document.querySelector(".preloader");
 setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
 }, 2000)
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const icon = question.querySelector('.faq-icon');
+        const isActive = item.classList.contains('active');
+        
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          otherItem.classList.remove('active');
+          otherItem.querySelector('.faq-answer').style.maxHeight = "0";
+          otherItem.querySelector('.faq-icon').textContent = "+";
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.textContent = "+";
+        }
+      });
+    });
+  });
