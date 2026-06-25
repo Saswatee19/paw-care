@@ -1035,8 +1035,8 @@ background: transparent !important;
 }
 
 .pawcare-faq-section {
+  background-color: #f1e4f3;
   padding: 60px 20px;
-  background-color: #f9f9fb;
   font-family: "Sora", sans-serif;
 }
 
@@ -1073,7 +1073,6 @@ background: transparent !important;
 .faq-item {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -1085,8 +1084,8 @@ background: transparent !important;
   font-size: 1.1rem;
   font-family: "Sora", sans-serif;
   font-weight: 600;
-  color: #333;
-  background: none;
+  color: #a53860;
+  background: #ffffff;
   border: none;
   cursor: pointer;
   display: flex;
