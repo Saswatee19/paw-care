@@ -467,16 +467,11 @@ html {
 }
 
 /* section2 */
-#header2 {
-    background-color: yellow;
-}
+
 #main2{
     height: 100%; 
     width: 100%; 
-    background-color: white;
-}
-#p2{
-    color:orangered;
+    background-color: #f1e4f3;
 }
 h1{
     margin: 20px;
@@ -493,12 +488,13 @@ p{
     margin: 50px;
 }
 .box{
-    background-color:pink;
+    background-color:#a53860;
     text-align: center;
     border-radius: 30px;
     overflow:hidden;
     margin: 10px;
     padding: 50px;
+    color: white;
 }
 .box:hover{
     transform: scale(1.03);
@@ -521,6 +517,11 @@ p{
     text-align: center;
     font-size: 72px;
     font-weight: bold;
+}
+.service-description{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 @keyframes slideLeft{
     from{
@@ -563,12 +564,12 @@ p{
         opacity: 1;
     }
 }
-#header3{
-    background-color: yellow;
-}
+
+
 #main3{
     height: 100%; 
     width: 100%; 
+    background-color: #f1e4f3;
 }
 .clinic-timing{
     text-align: center;
@@ -579,9 +580,9 @@ p{
     width: 50%;
     margin: 30px auto;
     padding: 30px;
-    background: green;
+    background: #8fe388;
     border-radius: 30px;
-    color: white;
+    color: black;
 }
 
 .timing-box h1{
@@ -601,7 +602,7 @@ p{
     background: yellow;
     color: red;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 30px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -612,18 +613,18 @@ p{
     gap: 40px;
     margin: 50px;
 }
-.doctor-availability{
-    text-align: center;
+.doctor-availability{ 
     font-size: 72px;
     font-weight: bold;
+    text-align: center;
 }
 .item{
-    background-color:pink;
     text-align: center;
     border: radius 20px;
     overflow:hidden;
     border-radius: 50px;
     margin: 10px;
+    background-color: #a53860 !important;
 }
 .small-box-1{
     background-color:white;
@@ -636,9 +637,10 @@ p{
     display: block;
 }
 .small-box-2{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
     height: 175px;
+    color:white;
 }
 .small-box-3{
     background-color:white;
@@ -651,9 +653,10 @@ p{
     display: block;
 }
 .small-box-4{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
     height: 175px;
+    color:white;
 }
 .small-box-5{
     background-color:white;
@@ -666,9 +669,10 @@ p{
     display: block;
 }
 .small-box-6{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
     height: 175px;
+    color:white;
 }
 .small-box-7{
     background-color:white;
@@ -681,15 +685,16 @@ p{
     display: block;
 }
 .small-box-8{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
     height: 175px;
+    color:white;
 }
 #left-doctor{
-    animation:slideLeft 35s ease;
+    animation:slideLeft 25s ease;
 }
 #right-doctor{
-    animation:slideRight 35s ease;
+    animation:slideRight 25s ease;
 }
 @keyframes slideLeft{
     from{
@@ -711,6 +716,9 @@ p{
         opacity: 1;
     }
 }
+.main4{
+    background-color: #f1e4f3;
+}
 .pet-details{
     text-align: center;
     font-size: 72px;
@@ -723,7 +731,7 @@ p{
     margin: 50px;
 }
 .items{
-    background-color:pink;
+    background-color: #a53860 !important;
     text-align: center;
     overflow:hidden;
     border-radius: 50px;
@@ -740,9 +748,9 @@ p{
     display: block;
 }
 .small-2{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
-
+    color: white;
 }
 .small-3{
     background-color:white;
@@ -755,8 +763,9 @@ p{
     display: block;
 }
 .small-4{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
+    color: white;
 }
 .small-5{
     background-color:white;
@@ -769,8 +778,9 @@ p{
     display: block;
 }
 .small-6{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
+    color: white;
 }
 .small-7{
     background-color:white;
@@ -782,8 +792,9 @@ p{
     display:block;
 }
 .small-8{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
+    color: white;
 }
 .small-9{
     background-color:white;
@@ -795,8 +806,9 @@ p{
     display:block;
 }
 .small-10{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
+    color: white;
 }
 .small-11{
     background-color:white;
@@ -808,8 +820,9 @@ p{
     display:block;
 }
 .small-12{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
+    color: white;
 }
 .small-13{
     background-color:white;
@@ -822,18 +835,16 @@ p{
     display: block;
 }
 .small-14{
-    background-color:pink;
+    background-color:#a53860 !important;
     padding: 25px;
+    color: white;
 }
 #click{
     cursor: pointer;
 }
 #click:hover{
-    color:blue;
+    color: #87f5fb;
 }
-
-
-
 
 /* ── TESTIMONIALS ── */
 
@@ -1381,6 +1392,63 @@ footer *,
     font-size: medium;
   }
 
+  .our-service,
+  .clinic-timing,
+  .doctor-availability,
+  .pet-details{
+      font-size:30px;
+  }
+
+  h1{
+      font-size:24px;
+  }
+
+  p{
+      font-size:14px;
+  }
+
+  .container,
+  .grid-container,
+  .grid-containers{
+      margin:15px;
+      gap:20px;
+  }
+
+  .box{
+      padding:25px;
+  }
+
+  .timing-box{
+      width:95%;
+      padding:20px;
+  }
+
+  .row{
+      font-size:14px;
+      flex-direction:column;
+      gap:5px;
+      text-align:center;
+  }
+
+  .helpline{
+      font-size:16px;
+  }
+
+  .small-1 img,
+  .small-3 img,
+  .small-5 img,
+  .small-7 img,
+  .small-9 img,
+  .small-11 img,
+  .small-13 img,
+  .small-box-1 img,
+  .small-box-3 img,
+  .small-box-5 img,
+  .small-box-7 img{
+      height:200px;
+      object-fit:cover;
+  }
+
 
   /* TESTIMONIALS  */
   .testimonials-section {
@@ -1459,40 +1527,3 @@ footer *,
   }
 
 }
-
-
-
-@media (max-width:768px){
-    h1{
-        font-size:28px;
-    }
-    p{
-        font-size:16px;
-    }
-    .timing-box{
-        width:80%;
-    }
-    .row{
-        font-size:16px;
-    }
-    .hotline{
-        font-size:16px;
-    }
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
-    .grid-containers{
-        grid-template-columns: 1fr;
-    }
-    .container{
-        grid-template-columns: 1fr;
-    }
-    .container > div:nth-child(odd){
-        animation: slideLeft 15s ease;
-    }
-
-    .container > div:nth-child(even){
-        animation: slideRight 15s ease;
-    }
-}
-
