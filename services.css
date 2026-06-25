@@ -1,0 +1,122 @@
+:root {
+  --berry-crush: #7A1448;
+  --lavender-veil: #E8DEEC;
+  --text-dark: #2C2C2C;
+  --white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora', sans-serif;
+  background-color: var(--lavender-veil);
+  color: var(--text-dark);
+}
+
+.services-page {
+  padding: 80px 20px;
+}
+
+.services-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: center;
+  color: var(--berry-crush);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  scroll-margin-top: 40px;
+  /* Hover Base properties */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- The Hover Effect --- */
+.service-row:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(122, 20, 72, 0.15);
+}
+
+.service-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+}
+
+.service-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.service-content h3 {
+  color: var(--berry-crush);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.service-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* --- Smartphone Responsiveness --- */
+@media (max-width: 480px) {
+  .services-page {
+    padding: 50px 15px;
+  }
+  
+  .services-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .service-row, 
+  .service-row:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .service-image {
+    width: 100%;
+  }
+  
+  .service-image img {
+    height: 250px;
+  }
+  
+  .service-content {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .service-content h3 {
+    font-size: 1.6rem;
+  }
+}
