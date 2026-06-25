@@ -96,6 +96,7 @@ body, html {
     fill: #000000;
     transition: transform 0.4s ease;
     opacity: 1;
+    transform: translateY(-20px);
 }
 .logo:hover .logo-icon{
     fill: #ff5733;
@@ -395,6 +396,14 @@ footer *,
     .navright {
     display: none;
   }
+  .navbar .logo-icon {
+    transform: translateY(0) !important;
+    margin-top: 0 !important;
+  }
+  .navbar .logo {
+    display: inline-flex;
+    align-items: center; 
+  }
 
   .hamburger {
     display: flex;
@@ -444,8 +453,12 @@ footer *,
   .hamburger-icon.fade_out{
     display: none;
   }
-  .card.fade_out{
-    opacity: 0;
+  .card.fade_out, .card.fade_out .about{
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease-in;
+    display: none !important;
   }
   .text-wrapper{
     width: 100%;
