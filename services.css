@@ -13,6 +13,53 @@ body {
   color: var(--text-dark);
 }
 
+.preloader{
+    position: fixed;
+    background-color: #a53860;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.bird{
+    border-top: 2px solid #f1e4f3;
+    border-right: 2px solid #f1e4f3;
+    border-left: 2px solid #f1e4f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.dog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.cat{
+    border-top: 2px solid #f1e4f3;
+    border-right: 2px solid #f1e4f3;
+    border-left: 2px solid #f1e4f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.preloader-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .services-page {
   padding: 80px 20px;
 }
@@ -40,15 +87,17 @@ body {
   overflow: hidden;
   margin-bottom: 40px;
   scroll-margin-top: 40px;
-  /* Hover Base properties */
+  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* --- The Hover Effect --- */
+
 .service-row:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: 0 15px 30px rgba(122, 20, 72, 0.15);
+  border: 2px solid #7A1448;
+  transition: transform 0.3s ease-in, border 0.3s ease-in;
 }
 
 .service-row:nth-child(even) {
@@ -87,7 +136,7 @@ body {
   margin: 0;
 }
 
-/* --- Smartphone Responsiveness --- */
+
 @media (max-width: 480px) {
   .services-page {
     padding: 50px 15px;
