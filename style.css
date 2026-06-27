@@ -496,8 +496,8 @@ p{
     margin:50px;
 }
 .box{
-    background-color:#a53860;
-    color:white;
+    background-color: #fff;
+    color: #2a1520;
     text-align:center;
     border-radius:30px;
     overflow:hidden;
@@ -580,9 +580,10 @@ p{
     width: 50%;
     margin: 30px auto;
     padding: 30px;
-    background: #8fe388;
+    background: #d4f6f8;
     border-radius: 30px;
-    color: black;
+    color: #1a111a;
+    border: 5px solid #2a1520;
 }
 .timing-box h1{
     margin-bottom: 30px;
@@ -596,8 +597,8 @@ p{
 }
 .helpline{
     margin-top: 25px;
-    background: yellow;
-    color: red;
+    background-color: #d64550;
+    color: white;
     padding: 15px;
     border-radius: 30px;
     text-align: center;
@@ -647,6 +648,7 @@ p{
     height:100%;
     object-fit:cover;
     display:block;
+    
 }
 .small-box-2,
 .small-box-4,
@@ -654,7 +656,8 @@ p{
 .small-box-8{
     padding:25px;
     height:175px;
-    color:black;
+    color:#e5f0fc;
+    background-color: #2a1520;
 }
 .show-left-doctor{
     animation:slideLeft 1s ease forwards;
