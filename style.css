@@ -895,6 +895,7 @@ background: transparent !important;
   font-family: "Sora", sans-serif;
 }
 
+/* FAQ Section */
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
@@ -985,6 +986,40 @@ background: transparent !important;
 
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
+}
+
+@media (max-width: 480px) {
+.pawcare-faq-section {
+padding: 40px 15px;
+}
+
+.faq-header {
+margin-bottom: 30px;
+}
+
+.faq-header h2 {
+font-size: 1.8rem;
+}
+
+.faq-header p {
+font-size: 1rem;
+}
+
+.faq-question {
+padding: 15px;
+font-size: 1rem;
+gap: 10px;
+}
+
+.faq-icon {
+width: 20px;
+font-size: 1.5rem;
+}
+
+.faq-answer p {
+padding: 0 15px 15px 45px;
+font-size: 0.95rem;
+}
 }
 
 /* FOOTER */
