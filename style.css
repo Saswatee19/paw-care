@@ -580,10 +580,16 @@ p{
     width: 50%;
     margin: 30px auto;
     padding: 30px;
-    background: #d4f6f8;
+    background: #F7E5E9;
     border-radius: 30px;
     color: #1a111a;
     border: 5px solid #2a1520;
+    box-shadow: 0 4px 6px #2a1520;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+.timing-box:hover{
+  box-shadow: 0 12px 14px #2a1520;
+  transform: translateY(-3px); 
 }
 .timing-box h1{
     margin-bottom: 30px;
@@ -605,12 +611,19 @@ p{
     font-size: 20px;
     font-weight: bold;
 }
+.timing-box:hover .helpline{
+  background-color: #db0a1b;
+  color: rgb(246, 246, 172);
+}
 
 .grid-container{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:40px;
     margin:50px;
+}
+.small-text:hover{
+  color: #0f13f8;
 }
 .doctor-availability{
     text-align:center;
@@ -628,6 +641,26 @@ p{
 
     transition:transform .3s ease,
                box-shadow .3s ease;
+}
+.item-right-doctor1{
+  text-decoration: none;
+  color: inherit;
+  animation: floatAnimation 6s ease-in-out infinite;
+}
+.item-right-doctor2{
+  text-decoration: none;
+  color: inherit;
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+.item-left-doctor2{
+  text-decoration: none;
+  color: inherit;
+  animation: floatAnimation 4s ease-in-out infinite;
+}
+.item-left-doctor1{
+  text-decoration: none;
+  color: inherit;
+  animation: floatAnimation 5s ease-in-out infinite;
 }
 .item:hover{
     transform:scale(1.05);
