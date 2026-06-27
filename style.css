@@ -696,13 +696,13 @@ p{
     height: 175px;
     color:white;
 }
-#left-doctor{
+/* #left-doctor{
     animation:slideLeft 25s ease;
-}
+} */
 #right-doctor{
     animation:slideRight 25s ease;
 }
-@keyframes slideLeft{
+/* @keyframes slideLeft{
     from{
         transform: translateX(-100px);
         opacity: 0;
@@ -711,7 +711,7 @@ p{
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 @keyframes slideRight{
     from{
         transform:translateX(100px);
