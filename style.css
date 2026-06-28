@@ -512,16 +512,16 @@ p{
     cursor:pointer;
 }
 .show-left{
-    animation:slideLeft 2s ease forwards;
+    animation:slideRight 2s ease forwards;
 }
 .show-right{
     animation:slideRight 2s ease forwards;
 }
 .show-up{
-    animation:slideUp 2s ease forwards;
+    animation:slideRight 2s ease forwards;
 }
 .show-down{
-    animation:slideDown 2s ease forwards;
+    animation:slideRight 2s ease forwards;
 }
 @keyframes slideLeft{
     from{
@@ -691,6 +691,7 @@ p{
     height:175px;
     color:#e5f0fc;
     background-color: #2a1520;
+    border-radius: 20px;
 }
 .show-left-doctor{
     animation:slideLeft 1s ease forwards;
@@ -967,7 +968,15 @@ background: transparent !important;
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
+  
 }
+#item-1, #item-3, #item-5{
+animation: slideRight 2.5s ease forwards;
+}
+#item-2, #item-4{
+animation: slideLeft 2.5s ease forwards;
+}
+
 .faq-item:hover{
   transform: translateY(-6px);
   box-shadow: 0 8px 24px rgba(135,245,251,0.45);
