@@ -36,9 +36,6 @@ html {
     box-sizing: border-box;
 }
 .bird{
-    border-top: 2px solid #f1e4f3;
-    border-right: 2px solid #f1e4f3;
-    border-left: 2px solid #f1e4f3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,9 +53,6 @@ html {
     display: none;
 }
 .cat{
-    border-top: 2px solid #f1e4f3;
-    border-right: 2px solid #f1e4f3;
-    border-left: 2px solid #f1e4f3;
     display: flex;
     justify-content: center;
     align-items: center;
