@@ -1,3 +1,6 @@
+//hamburger logic
+
+
 let hamburger_icon = document.querySelector(".hamburger-icon");
 let close_icon = document.querySelector(".close-icon");
 let hamburger_text = document.querySelector(".hamburger-text");
@@ -10,6 +13,8 @@ close_icon.addEventListener('click', () => {
     hamburger_text.classList.remove('open');
     hamburger_icon.classList.remove('fade_out');
 });
+
+///preloader logic
 
 let bird = document.querySelector(".bird");
 let dog = document.querySelector(".dog");
@@ -45,6 +50,8 @@ setTimeout(()=>{
     document.dispatchEvent(new Event('preloaderFinished')); 
 }, 2000);
 
+//faq slide logic
+
   document.addEventListener('DOMContentLoaded', () => {
     const faqQuestions = document.querySelectorAll('.faq-question');
 
@@ -69,6 +76,8 @@ setTimeout(()=>{
       });
     });
   });
+
+  //some animation logic
 const boxes = document.querySelectorAll(".box");
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -123,4 +132,41 @@ doctors.forEach((doctor)=>{
     doctorObserver.observe(doctor);
 });
 
-  
+
+
+
+// audio logic
+
+// Function to initialize the audio triggers
+const initMeowAudio = () => {
+    if (localStorage.getItem('hasMeowed')) return;
+
+    const playMeowOnce = () => {
+        const audio = document.getElementById('meowAudio');
+        
+        if (audio) {
+            audio.play()
+                .then(() => {
+                    localStorage.setItem('hasMeowed', 'true');
+                    // Only remove listeners if it ACTUALLY played successfully
+                    removeListeners();
+                })
+                .catch(error => {
+                    console.log("Autoplay blocked. Retrying on next valid click/touch...", error);
+                    // Do NOT remove listeners here; let the user click again
+                });
+        }
+    };
+
+    const removeListeners = () => {
+        window.removeEventListener('click', playMeowOnce);
+        window.removeEventListener('touchstart', playMeowOnce);
+    };
+
+    // Listen only for true user gestures (Exclude scroll)
+    window.addEventListener('click', playMeowOnce);
+    window.addEventListener('touchstart', playMeowOnce);
+};
+
+// Ensure your preloader event is hooked up correctly
+document.addEventListener('preloaderFinished', initMeowAudio);
