@@ -1401,32 +1401,34 @@ footer *,
     height: auto;
     font-size: 2.5rem;
   }*/
-/* --- THE NUCLEAR HEADER FIX --- */
-  .text-wrapper {
+/* --- BULLETPROOF MOBILE HEADER --- */
+  .force-mobile-view {
     width: 100% !important;
-    height: 110px !important;
+    height: 120px !important; 
     display: block !important;
     position: relative !important;
     overflow: hidden !important;
   }
 
-  .text-wrapper .line {
-    line-height: 1.1 !important;
-    font-size: 2.5rem !important;
-    display: flex !important; 
-    flex-direction: column !important;
-  }
-
-  /* This forces AOS to stop hiding the text on mobile */
-  .text-wrapper span[data-aos] {
+  .force-mobile-view .line {
+    position: absolute !important;
+    display: block !important; 
+    font-size: 2.2rem !important; /* Slightly scaled down to guarantee it fits on narrow screens */
+    line-height: 1.2 !important;
+    white-space: normal !important; /* Prevents text from shooting off the right side of the screen */
     opacity: 1 !important;
-    transform: none !important;
+    visibility: visible !important;
+    transform-origin: center center !important;
   }
-  /* ------------------------------ */
+  
+  .force-mobile-view .line span {
+    display: inline-block !important;
+  }
+  /* --------------------------------- */
 
-  .swap-link{
+  /*.swap-link{
     font-size: 2.5rem;
-  }
+  }*/
   
   .main{
     display: flex;
