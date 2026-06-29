@@ -5,6 +5,17 @@
     --lavender-light: #f5f5fc;
     --text-dark: #2d2d35;
     --text-light: #5e5e6e;
+
+
+  --font-l: "Galindo", sans-serif;
+  --font-m: "Calistoga", sans-serif;
+  --font-s: "Sora", sans-serif;
+
+  /* font weights */
+  --wt-l:700;
+  --wt-m:500;
+  --wt-s:400;
+
 }
 
 * {
@@ -67,11 +78,12 @@ body {
 }
 
 .page-header {
+    font-family: var(--font-l);
     text-align: center;
     color: var(--berry-crush);
     font-size: 3rem;
     margin-bottom: 3rem;
-    font-weight: 700;
+    font-weight: var(--wt-m);
 }
 
 .vets-container {
@@ -113,9 +125,10 @@ body {
 }
 
 .vet-name {
+    font-family: var(--font-l);
     color: var(--berry-crush);
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: var(--wt-m);
     margin-bottom: 0.25rem;
 }
 

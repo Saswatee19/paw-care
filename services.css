@@ -3,6 +3,15 @@
   --lavender-veil: #E8DEEC;
   --text-dark: #2C2C2C;
   --white: #FFFFFF;
+
+  --font-l: "Galindo", sans-serif;
+  --font-m: "Calistoga", sans-serif;
+  --font-s: "Sora", sans-serif;
+
+  /* font weights */
+  --wt-l:700;
+  --wt-m:500;
+  --wt-s:400;
 }
 
 body {
@@ -73,10 +82,11 @@ body {
 }
 
 .services-title {
+  font-family: var(--font-l);
   text-align: center;
   color: var(--berry-crush);
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: var(--wt-m);
   margin-bottom: 60px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -125,9 +135,10 @@ body {
 }
 
 .service-content h3 {
+  font-family: var(--font-l);
   color: var(--berry-crush);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: var(--wt-m);
   margin-top: 0;
   margin-bottom: 20px;
 }

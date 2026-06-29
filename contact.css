@@ -13,6 +13,16 @@ html {
   scroll-behavior: smooth;
   
 }
+:root{
+  --font-l: "Galindo", sans-serif;
+  --font-m: "Calistoga", sans-serif;
+  --font-s: "Sora", sans-serif;
+
+  /* font weights */
+  --wt-l:700;
+  --wt-m:500;
+  --wt-s:400;
+}
 .preloader{
     position: fixed;
     background-color: #1f0707;
@@ -119,6 +129,7 @@ html {
     color: inherit;
 }
 .logo-text{
+    font-family: var(--font-l);
     font-size: 30px;
     transition: transform 0.2s ease;
 }
@@ -191,8 +202,9 @@ main {
 }
 
 .contact-hero h1 {
+  font-family: var(--font-l);
     font-size: 3.5rem;
-    font-weight: 800;
+    font-weight: var(--wt-m);
     color: #a53860; 
     margin-bottom: 1rem;
 }
@@ -233,6 +245,8 @@ main {
 }
 
 .contact-newsletter-card h2 {
+  font-family: var(--font-l);
+  font-weight: var(--wt-m);
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -351,6 +365,8 @@ button,
 }
 
 .contact-card h3 {
+  font-family: var(--font-l);
+  font-weight: var(--wt-m);
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
 }
@@ -423,6 +439,7 @@ footer *,
 }
 
 .footer-logo {
+  font-family: var(--font-l);
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff !important;

@@ -3,8 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --font-l: "Galindo", sans-serif;
+  --font-m: "Calistoga", sans-serif;
+  --font-s: "Sora", sans-serif;
+
+  /* font weights */
+  --wt-l:700;
+  --wt-m:500;
+  --wt-s:400;
+}
 body{
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-s) ;
   background-color: #f1e4f3;
   color: #2a1520;
   overflow-x: hidden;
@@ -86,6 +97,7 @@ html {
     color: inherit;
 }
 .logo-text{
+    font-family: var(--font-l);
     font-size: 30px;
     transition: transform 0.2s ease;
 }
@@ -162,6 +174,8 @@ html {
 }
 
 .text-wrapper {
+  font-family: var(--font-l);
+  font-size: larger;
   display: inline-flex;  
   flex-direction: column;
   position: relative;
@@ -493,9 +507,10 @@ p{
   margin-top: 5em;
 }
 .our-service-heading{
+  font-family: var(--font-l);
     text-align:center;
     font-size:55px;
-    font-weight:bold;
+    font-weight:var(--wt-m);
 }
 .service-description{
   text-align: center;
@@ -516,6 +531,13 @@ p{
     margin:10px;
     opacity:0;
     transition:transform .3s ease, box-shadow .3s ease;
+}
+.box h3{
+  font-family: var(--font-l);
+  font-weight: 100;
+}
+.box p{
+  font-size: large;
 }
 .box:hover{
     transform:scale(1.05);
@@ -581,9 +603,10 @@ p{
     background-color: #f1e4f3;
 }
 .clinic-timing{
+  font-family: var(--font-l);
     text-align: center;
     font-size: 55px;
-    font-weight: bold;
+    font-weight: var(--wt-m);
 }
 .timing-box{
     width: 50%;
@@ -633,9 +656,10 @@ p{
 }
 
 .doctor-availability{
+  font-family: var(--font-l);
+  font-weight: var(--wt-s);
     text-align:center;
     font-size:55px;
-    font-weight:bold;
     margin-top: 2em;
 }
 
@@ -747,8 +771,9 @@ p{
 }
 
 .section-title {
+  font-family: var(--font-l);
   font-size: 56px;
-  font-weight: 800;
+  font-weight: var(--wt-m);
   text-align: center;
   color: #2a1520;
   margin-bottom: 16px;
@@ -887,10 +912,11 @@ background: transparent !important;
 }
 
 .booking h2 {
+  font-family: var(--font-l);
   color: #ffffff !important;
   background: transparent !important;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 700;
+  font-weight: var(--wt-m);
   margin-bottom: 0.8rem;
 }
 
@@ -965,8 +991,9 @@ background: transparent !important;
 }
 
 .faq-header h2 {
-  font-size: 2rem;
-  font-family: "Sora", sans-serif;
+  font-size: 3rem;
+  font-family: var(--font-l);
+  font-weight: var(--wt-m);
   color: #333;
   margin-bottom: 10px;
 }
@@ -1090,6 +1117,7 @@ footer *,
 }
 
 .footer-logo {
+  font-family: var(--font-l);
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff !important;
@@ -1240,6 +1268,7 @@ footer *,
   margin-left: -10em;
 }
 .info-val{
+  font-family: var(--font-l);
   font-size: xx-large;
   font-weight: 800;
 }
@@ -1285,12 +1314,17 @@ footer *,
 }
 .responsive-heading{
   display: none;
+  font-family: var(--font-l);
 }
 .doctor-availability-heading-responsive{
+  font-family: var(--font-l);
+  font-weight: var(--wt-m);
   display: none;
   opacity: 0;
 }
 .clinic-timing-responsive{
+  font-family: var(--font-l);
+  font-weight: var(--wt-m);
   display: none;
   opacity: 0;
 }

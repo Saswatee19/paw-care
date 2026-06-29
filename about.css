@@ -11,6 +11,17 @@ body, html {
     height: 100%;
     background-color: #111;
     }
+
+    :root {
+  --font-l: "Galindo", sans-serif;
+  --font-m: "Calistoga", sans-serif;
+  --font-s: "Sora", sans-serif;
+
+  /* font weights */
+  --wt-l:700;
+  --wt-m:500;
+  --wt-s:400;
+}
     .preloader{
     position: fixed;
     background-color: #1f0707;
@@ -21,6 +32,7 @@ body, html {
     width: 100%;
     z-index: 9999;
 }
+
 .bird{
     border-top: 2px solid #f1e4f3;
     border-right: 2px solid #f1e4f3;
@@ -92,6 +104,7 @@ body, html {
     color: inherit;
 }
 .logo-text{
+    font-family: var(--font-l);
     font-size: 30px;
     transition: transform 0.2s ease;
 }
@@ -196,6 +209,10 @@ body, html {
     animation: floatAnimation 3s ease-in-out infinite;
     transition: opacity 0.6s ease-in-out, filter 0.5s ease-in-out;
 }
+.about h1{
+  font-family: var(--font-l);
+  font-weight: var(--wt-m);
+}
 .logo-icon{
     margin-top: 3em;
 }
@@ -250,6 +267,7 @@ footer *,
 }
 
 .footer-logo {
+  font-family: var(--font-l);
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff !important;
