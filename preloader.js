@@ -23,4 +23,12 @@ let preloader = document.querySelector(".preloader");
 
 setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
-}, 2000)
+    AOS.init({  //learn
+        duration: 1200, 
+        once: true, 
+        startEvent: 'preloaderFinished' 
+    }); 
+
+    
+    document.dispatchEvent(new Event('preloaderFinished'));  //learn this listener
+}, 2000);

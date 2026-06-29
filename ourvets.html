@@ -6,6 +6,7 @@
     <title>Our Vets</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -129,11 +130,11 @@
 
 <body>
 
-    <h2 class="page-header">Our Vets</h2>
+    <div data-aos="zoom-out" data-aos-duration="1400" class="page-header">Our Vets</div>
 
     <div class="vets-container">
         
-        <div class="vet-card" id="saswatee">
+        <div data-aos="fade-up-right" data-aos-duration="1200" class="vet-card" id="saswatee">
             <img src="Images/vet1.png" alt="vet1">
             <div class="card-content">
                 <h2 class="vet-name">Dr. Saswatee Mishra</h2>
@@ -143,7 +144,7 @@
             </div>
         </div>
 
-        <div class="vet-card" id="pratik">
+        <div data-aos="fade-up-left" data-aos-duration="1200" class="vet-card" id="pratik">
             <img src="Images/vet2.png" alt="vet2">
             <div class="card-content">
                 <h2 class="vet-name">Dr. Pratik K Sahoo</h2>
@@ -153,7 +154,7 @@
             </div>
         </div>
 
-        <div class="vet-card" id="pratyus">
+        <div data-aos="fade-up-right" data-aos-duration="1200" class="vet-card" id="pratyus">
             <img src="Images/vet3.png" alt="vet3">
             <div class="card-content">
                 <h2 class="vet-name">Dr. Pratyus Patnaik</h2>
@@ -163,7 +164,7 @@
             </div>
         </div>
 
-        <div class="vet-card" id="suchismita">
+        <div data-aos="fade-up-left" data-aos-duration="1200" class="vet-card" id="suchismita">
             <img src="Images/vet4.png" alt="vet4">
             <div class="card-content">
                 <h2 class="vet-name">Dr. Suchismita Singh</h2>
@@ -175,7 +176,7 @@
 
     </div>
 
-<footer style="background-color: #2a1520;">
+<footer data-aos="flip-up" data-aos-duration="1200" style="background-color: #2a1520;">
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="#" class="footer-logo">🐾 PawCare</a>
@@ -230,6 +231,8 @@
             <span>Made with <i class="fa-solid fa-heart fa-beat" style="color: rgb(245, 41, 95);"></i> for pets · <a href="#">Privacy Policy</a></span>
         </div>
     </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script src="ourvets.js"></script>
 

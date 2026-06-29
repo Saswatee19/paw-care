@@ -35,7 +35,15 @@ let preloader = document.querySelector(".preloader");
 
 setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
-}, 2000)
+    AOS.init({ 
+        duration: 1200, 
+        once: true, 
+        startEvent: 'preloaderFinished' 
+    }); 
+
+    
+    document.dispatchEvent(new Event('preloaderFinished')); 
+}, 2000);
 
   document.addEventListener('DOMContentLoaded', () => {
     const faqQuestions = document.querySelectorAll('.faq-question');

@@ -29,8 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (dog) setTimeout(() => { dog.style.display = "none"; }, 1600);
     if (cat) setTimeout(() => { cat.style.display = "flex"; }, 1600);
     if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('preloader-hidden');
-        }, 2000);
+        setTimeout(()=>{
+    preloader.classList.add('preloader-hidden');
+    AOS.init({ 
+        duration: 1200, 
+        once: true, 
+        startEvent: 'preloaderFinished' 
+    }); 
+
+    
+    document.dispatchEvent(new Event('preloaderFinished')); 
+}, 2000);
     }
 });

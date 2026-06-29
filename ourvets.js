@@ -22,7 +22,15 @@ let preloader = document.querySelector(".preloader");
 
 setTimeout(()=>{
     preloader.classList.add('preloader-hidden');
-}, 2000)
+    AOS.init({ 
+        duration: 1200, 
+        once: true, 
+        startEvent: 'preloaderFinished' 
+    }); 
+
+    
+    document.dispatchEvent(new Event('preloaderFinished')); 
+}, 2000);
 
 let hamburger_icon = document.querySelector(".hamburger-icon");
 let close_icon = document.querySelector(".close-icon");
