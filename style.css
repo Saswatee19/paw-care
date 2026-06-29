@@ -147,11 +147,17 @@ html {
 .hamburger {
   display: none;
 }
-.main {
+/*.main {
   display: flex;
   width: 75vh;
   min-height: 50vh;
   padding: 2em 10em;
+}*/
+.main {
+    display: flex;
+    justify-content: space-between; /* Pushes left/right content apart */
+    align-items: center;
+    padding: 2em 5vw;
 }
 
 .mainlefttop {
@@ -165,18 +171,23 @@ html {
   text-decoration: none;
   color: #000000;
   font-weight: 900;
+  display: inline-block;
+    width: 100%;
+    max-width: 500px; /* Limits the width so it isn't awkward on desktop */
 }
 
 .text-wrapper {
   font-family: var(--font-l);
-  font-size: larger;
+  /*font-size: larger;*/
   display: inline-flex;  
   flex-direction: column;
   position: relative;
-  height: 150px;          
+  /*height: 150px;*/       
   line-height: 80px;     
   width: 550px;          
-  overflow: hidden;      
+  overflow: hidden;  
+  height: 120px; /* Keeps the container height fixed */
+    font-size: 3.5rem; /* Larger font for desktop */    
 }
 
 
@@ -193,7 +204,6 @@ html {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
-  
 }
 
 
@@ -295,10 +305,21 @@ html {
   margin-top: 1.5em;
   font-size: 2em;
 }
-.mainright{
+/*.mainright{
   position: relative;
   display: flex;
   gap: 3.5em;
+}*/
+.mainleft {
+    flex: 1;
+    max-width: 50%;
+}
+
+.mainright {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers images within the right half */
+    position: relative;
 }
 .dog-container{
   margin-top: 6%;
@@ -1333,13 +1354,12 @@ footer *,
         padding: 10px;
     }
   
-  .text-front{
+  /*.text-front{
     font-size: 20px;
   }
   .text-back{
     font-size: 20px;
-  }
-  
+  }*/
   .navright {
     display: none;
   }
@@ -1395,11 +1415,40 @@ footer *,
   .text-wrapper{
     width: 100%;
     height: auto;
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
+    font-size: 2.2rem;
   }
-  .swap-link{
-    font-size: 2.5rem;
+  .mainleft {
+        max-width: 100%;
+    }
+/* --- BULLETPROOF MOBILE HEADER --- */
+  .force-mobile-view {
+    width: 100% !important;
+    height: 120px !important; 
+    display: block !important;
+    position: relative !important;
+    overflow: hidden !important;
   }
+
+  .force-mobile-view .line {
+    position: absolute !important;
+    display: block !important; 
+    font-size: 2.2rem !important; /* Slightly scaled down to guarantee it fits on narrow screens */
+    line-height: 1.2 !important;
+    white-space: normal !important; /* Prevents text from shooting off the right side of the screen */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform-origin: center center !important;
+  }
+  
+  .force-mobile-view .line span {
+    display: inline-block !important;
+  }
+  /* --------------------------------- */
+
+  /*.swap-link{
+    font-size: 2.5rem;
+  }*/
   
   .main{
     display: flex;
@@ -1407,6 +1456,7 @@ footer *,
     width: 100%;
     padding: 2em 1.5em;
     margin-left: 0;
+      text-align: center;
   }
   .mainright img{
     display: none;
