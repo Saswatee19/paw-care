@@ -491,9 +491,9 @@ p{
 .top{
   margin-top: 5em;
 }
-.our-service{
+.our-service-heading{
     text-align:center;
-    font-size:72px;
+    font-size:55px;
     font-weight:bold;
 }
 .service-description{
@@ -581,7 +581,7 @@ p{
 }
 .clinic-timing{
     text-align: center;
-    font-size: 72px;
+    font-size: 55px;
     font-weight: bold;
 }
 .timing-box{
@@ -630,88 +630,94 @@ p{
     gap:40px;
     margin:50px;
 }
-.small-text:hover{
-  color: #0f13f8;
-}
+
 .doctor-availability{
     text-align:center;
-    font-size:72px;
+    font-size:55px;
     font-weight:bold;
     margin-top: 2em;
 }
-.item{
-    background:white;
-    text-align:center;
-    border-radius:50px;
-    overflow:hidden;
-    margin:10px;
+/* Container Setup */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    opacity:0;
+/* Wrapper to support AOS animations correctly */
+.doc-wrapper {
+    display: flex;
+}
 
-    transition:transform .3s ease,
-               box-shadow .3s ease;
+/* Unified Card styling with strict equal height features */
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    text-decoration: none;
+    color: #1a111a;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.item-right-doctor1{
-  text-decoration: none;
-  color: inherit;
-  animation: floatAnimation 6s ease-in-out infinite;
+
+/* Hover Effects */
+.doctor-card:hover {
+    transform: scale(1.03);
+    color: #030ee7;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
-.item-right-doctor2{
-  text-decoration: none;
-  color: inherit;
-  animation: floatAnimation 3s ease-in-out infinite;
+
+/* Image Container */
+.card-img-wrap {
+    width: 100%;
+    height: 250px; /* Adjust image height as needed */
+    overflow: hidden;
 }
-.item-left-doctor2{
-  text-decoration: none;
-  color: inherit;
-  animation: floatAnimation 4s ease-in-out infinite;
-}
-.item-left-doctor1{
-  text-decoration: none;
-  color: inherit;
-  animation: floatAnimation 5s ease-in-out infinite;
-}
-.doc h2{
-  text-align: center;
-}
-.doc p{
-  text-align: center;
-}
-.item:hover{
-    transform:scale(1.05);
-    box-shadow:0 15px 30px rgba(0,0,0,.3);
-    cursor:pointer;
-}
-.small-box-1,
-.small-box-3,
-.small-box-5,
-.small-box-7{
-    padding:0;
-}
-.small-box-1 img,
-.small-box-3 img,
-.small-box-5 img,
-.small-box-7 img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: top;
-    display:block;
-    background-color: #ffffff;
-    border-radius: 20px 20px 0 0;
-    
-}
-.small-box-2,
-.small-box-4,
-.small-box-6,
-.small-box-8{
-    padding:25px;
-    height:145px;
-    color:#1a111a;
-    background-color: #ffffff;
-    border-radius: 0 0 20px 20px;
+    display: block;
 }
 
+/* Text Container - flex-grow pushes them to match heights perfectly */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.card-body h2 {
+    font-size: 1.25rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: #666;
+}
+
+/* Header Text styling from your setup */
+.doctor-availability {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 2em;
+}
 @keyframes slideLeft{
     from{
         transform:translateX(-100px);
@@ -1282,6 +1288,14 @@ footer *,
 .responsive-heading{
   display: none;
 }
+.doctor-availability-heading-responsive{
+  display: none;
+  opacity: 0;
+}
+.clinic-timing-responsive{
+  display: none;
+  opacity: 0;
+}
 
 
 @media (max-width: 480px) {
@@ -1408,8 +1422,11 @@ footer *,
   .info-text{
     font-size: medium;
   }
+  .our-service-heading{
+    display: none;
+  }
 
-  .our-service,
+  .our-service-heading,
     .clinic-timing,
     .doctor-availability,
     .pet-details
@@ -1424,6 +1441,25 @@ footer *,
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .doctor-availability-heading-responsive{
+      opacity: 1;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+    .clinic-timing-responsive{
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .clinic-timing{
+      display: none;
     }
     .container,
     .grid-container,
@@ -1448,24 +1484,33 @@ footer *,
     .helpline{
         font-size:16px;
     }
-    .our-service{
+    .our-service-heading{
       margin-top: 20px;
     }
+    
 
-  .small-1 img,
-  .small-3 img,
-  .small-5 img,
-  .small-7 img,
-  .small-9 img,
-  .small-11 img,
-  .small-13 img,
-  .small-box-1 img,
-  .small-box-3 img,
-  .small-box-5 img,
-  .small-box-7 img{
-      height:200px;
-      object-fit:cover;
-  }
+  .grid-container {
+        grid-template-columns: 1fr; /* Force 1 card per row */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .doctor-availability {
+        font-size: 32px; /* Scale down giant typography for mobile */
+        margin-top: 1em;
+    }
+
+    .card-img-wrap {
+        height: 220px; /* Slightly shorter images on tiny screens */
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-body h2 {
+        font-size: 1.1rem;
+    }
   .timing-box h1{
     font-size: 5px;
   }

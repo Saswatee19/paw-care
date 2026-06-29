@@ -8,10 +8,11 @@ body, html{
 }
 .preloader{
     position: fixed;
-    background-color: #a53860;
+    background-color: #1f0707;
     top: 0;
     left: 0;
-    height: 100dvh;
+    right: 0;
+    bottom: 0;
     width: 100%;
     z-index: 9999;
 }

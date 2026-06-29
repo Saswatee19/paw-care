@@ -18,6 +18,16 @@ body {
     background-color: #f1e4f1;
     color: var(--text-dark);
 }
+.preloader{
+    position: fixed;
+    background-color: #1f0707;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
 .bird{
     border-top: 2px solid #f1e4f3;
     border-right: 2px solid #f1e4f3;
