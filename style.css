@@ -199,12 +199,6 @@ html {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
-
-  /* added this line */
-
-  line-height: 1.1; /* Overrides the 80px desktop line-height */
-  
-  
 }
 
 
@@ -1402,14 +1396,20 @@ footer *,
   .hamburger-icon.fade_out{
     display: none;
   }
-  .text-wrapper{
-    /*width: 100%;
-    height: auto;
-    font-size: 2.5rem;*/
+  /*.text-wrapper{
     width: 100%;
-    height: 100px; /* Forces the box open so absolute elements aren't hidden */
+    height: auto;
     font-size: 2.5rem;
-    display: block;
+  }*/
+  .text-wrapper {
+    width: 100%;
+    height: 120px; /* Forces the box open so the text isn't hidden */
+    display: block; 
+  }
+
+  .swap-link .line {
+    line-height: 1.1; /* Overrides the massive 80px desktop height */
+    font-size: 2.5rem; /* Restores the correct mobile font size */
   }
 
   .swap-link{
