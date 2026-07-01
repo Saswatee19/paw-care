@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --berry-crush: #7A1448;
   --lavender-veil: #E8DEEC;
