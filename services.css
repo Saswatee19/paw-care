@@ -112,7 +112,6 @@ body {
     cursor: pointer;
     transform: translateY(6px) rotate(-5deg);
 }
-
 .navright {
   display: flex;
   font-size: 16px;
