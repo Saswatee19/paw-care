@@ -186,7 +186,7 @@ document.addEventListener("preloaderFinished", () => {
     let currentCount = 0;
     
     
-    const customIntervalSpeed = 2000 / counter.target; //did this to measure which num needs what time interval for incrementing bcoz large num should hike in less time 
+    const customIntervalSpeed = 3000 / counter.target; //did this to measure which num needs what time interval for incrementing bcoz large num should hike in less time 
 
     const intervalId = setInterval(() => {
       currentCount++;

@@ -135,6 +135,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: medium;
     color: #2a1520;
     transition: color 0.3s ease;
     text-decoration: none;
