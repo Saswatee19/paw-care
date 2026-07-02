@@ -21,6 +21,12 @@ body, html {
   --wt-l:700;
   --wt-m:500;
   --wt-s:400;
+
+  --bg-color: #e8ccad;
+  --bg-white: #faf4ec;
+  --bg-blue: #08f6f6;
+  --bg-orange: #ff5733;
+  --bg-text-color: #3d1f00;
 }
     .preloader{
     position: fixed;
@@ -76,7 +82,6 @@ body, html {
   width: 100%;
   position: fixed;
   top: 0%;
-  position: sticky;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -107,12 +112,12 @@ body, html {
     fill: #000000;
     transition: transform 0.4s ease;
     opacity: 1;
-    transform: translateY(-20px);
+   /* transform: translateY(-20px);*/
 }
 .logo:hover .logo-icon{
     fill: #ff5733;
     cursor: pointer;
-    transform: translateY(-6px) rotate(15deg);
+    transform: translateY(-6px) rotate(-10deg)/*rotate(15deg)*/;
 }
 .logo-text:hover{
     color: #ff5733;
@@ -196,7 +201,7 @@ body, html {
     position: absolute;
     top: 60%;
     left: 50%;
-    background-color: #faf4ec;
+    background-color:var(--bg-color);
     height: 500px;
     width: 500px;
     max-width: 90%; 
@@ -207,11 +212,20 @@ body, html {
 .about h1{
   font-family: var(--font-l);
   font-weight: var(--wt-m);
+  padding: 0.5em;
 }
-.logo-icon{
+/*.logo-icon{
     margin-top: 3em;
+}*/
+
+.about .logo-icon {
+    margin-top: 15px; 
+    transform-origin: left bottom; 
 }
 
+.about .logo:hover .logo-icon {
+    transform: translateY(-6px) rotate(-15deg); 
+}
 
 @keyframes floatAnimation {
    0% {
@@ -414,17 +428,22 @@ footer *,
     display: none;
   }
   .navbar .logo-icon {
-    transform: translateY(0) !important;
+    /*transform: translateY(0) !important;*/
     margin-top: 0 !important;
   }
   .navbar .logo {
     display: inline-flex;
     align-items: center; 
   }
+  .navbar .logo:hover .logo-icon,
+  .navbar .logo:active .logo-icon {
+      fill: #ff5733 !important;
+      transform: translateY(-6px) rotate(-10deg) !important;
+  }
 
   .hamburger {
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 20px; 
     top: 1.5em;
     z-index: 1001;
@@ -435,12 +454,12 @@ footer *,
   }
   .hamburger-text {
     z-index: 1003;
-    position: fixed;
+    position: fixed ;
     top: 0;
     right: -100dvw; 
     width: 100dvw;
     height: 100dvh;
-    background-color: #f1e4f3;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -569,6 +588,7 @@ footer *,
         font-size: 11px;
         line-height: 1.4;
     }
+
 
     footer {
         z-index: 1001;

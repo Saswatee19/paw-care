@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --berry-crush: #7A1448;
   --lavender-veil: #E8DEEC;
@@ -67,7 +73,6 @@ body {
   width: 100%;
   position: fixed;
   top: 0%;
-  position: sticky;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -198,7 +203,7 @@ body {
 .service-image img {
   width: 100%;
   height: 420px;
-  object-fit: cover;
+  object-fit: scale-down;
   display: block;
 }
 
@@ -303,7 +308,8 @@ body {
   }
   
   .service-image img {
-    height: 250px;
+    height: 150px;
+    object-fit: scale-down;
   }
   
   .service-content {

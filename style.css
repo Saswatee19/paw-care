@@ -28,6 +28,7 @@ body{
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   
 }
 .preloader{
@@ -77,7 +78,6 @@ html {
   width: 100%;
   position: fixed;
   top: 0%;
-  position: sticky;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -353,10 +353,10 @@ html {
   margin-left: -40%;
   position: absolute;
   background: var(--bg-white);
+  box-shadow: 0 20px 40px var(--bg-orange);
   border-radius: 24px;
   padding: 24px;
-  max-width: 400px;
-  box-shadow: 0 10px 10px var(--bg-orange); 
+  max-width: 400px; 
   font-family: system-ui, -apple-system, sans-serif;
   animation: floatAnimation 3s ease-in-out infinite;
   transition: opacity 0.6s ease-in-out, filter 0.5s ease-in-out;
@@ -389,7 +389,7 @@ html {
 
 .avatar {
   font-size: 24px;
-  background: #f7e6d2;
+  background: #f7d2a9;
   padding: 10px;
   border-radius: 50%;
   width: 44px;
@@ -436,7 +436,7 @@ html {
 }
 
 .stat-box {
-  background-color: var(--bg-color);
+  background-color: #fbd6ad;
   border-radius: 12px;
   padding: 16px;
   display: flex;
@@ -494,8 +494,7 @@ html {
 
 
 .pet-card:hover {
-  transform: translateY(-6px); 
-  box-shadow: 0 20px 40px var(--bg-orange); 
+  transform: translateY(-6px);  
 }
 .mainright:hover .pet-card{
   opacity: 1;
@@ -1191,7 +1190,7 @@ footer *,
 }
 
 .footer-col h4 {
-  color: #edc55b !important;
+  color: var(--bg-color) !important;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -1304,7 +1303,7 @@ footer *,
 }
 
 .footer-bottom a {
-  color: #edc55b !important;
+  color:var(--bg-color) !important;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -1412,6 +1411,9 @@ footer *,
     align-items: center;
     justify-content: center;
   }
+  .text-wrapper{
+    width: 100% impot !important;
+  }
   
   .main{
     display: flex;
@@ -1439,7 +1441,8 @@ footer *,
   bottom: auto;
   left: auto;
   right: auto;
-  margin: 1.5em auto; 
+  box-shadow: 0 10px 10px var(--bg-orange);
+  margin: 1.5em auto !important; 
   max-width: 100%;    
   opacity: 1;
 }
@@ -1453,9 +1456,10 @@ footer *,
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    width: 100%;
+    width: 100% !important;
     padding: 10px 16px;
-    max-width: 100%;
+    max-width: 100% !important;
+    height: auto;
     box-sizing: border-box;
    }
    .info-box{
@@ -1472,7 +1476,7 @@ footer *,
     font-size: small;
   }
   #main2{
-    height: 130em;
+    height: 128em;
   }
   .our-service-heading{
     display: none;
@@ -1496,7 +1500,7 @@ footer *,
     }
     .doctor-availability-heading-responsive{
       opacity: 1;
-      font-size: 20px;
+      font-size: 23px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1692,10 +1696,6 @@ font-size: 0.95rem;
         flex-direction: column;
         text-align: center;
         
-    }
-    
-    .mainleft {
-        /* max-width: 100%; */
     }
     
 }
