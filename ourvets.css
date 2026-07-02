@@ -14,12 +14,6 @@
   --wt-m:500;
   --wt-s:400;
 
-  --bg-color: #e8ccad;
-  --bg-white: #faf4ec;
-  --bg-blue: #08f6f6;
-  --bg-orange: #ff5733;
-  --bg-text-color: #3d1f00;
-
 }
 
 * {
@@ -79,6 +73,7 @@ body {
   width: 100%;
   position: fixed;
   top: 0%;
+  position: sticky;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -422,7 +417,7 @@ footer *,
 }
 
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .navright {
     display: none;
   }
@@ -445,7 +440,7 @@ footer *,
     right: -100dvw; 
     width: 100dvw;
     height: 100dvh;
-    background-color: var(--bg-color);
+    background-color: #f1e4f3;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
