@@ -175,7 +175,7 @@ html {
 .swap-link {
   display: inline-block;
   font-size: 4rem; 
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   color: var(--bg-text-color);
   font-weight: 900;
