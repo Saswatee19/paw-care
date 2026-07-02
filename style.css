@@ -353,10 +353,10 @@ html {
   margin-left: -40%;
   position: absolute;
   background: var(--bg-white);
+  box-shadow: 0 20px 40px var(--bg-orange);
   border-radius: 24px;
   padding: 24px;
-  max-width: 400px;
-  box-shadow: 0 10px 10px var(--bg-orange); 
+  max-width: 400px; 
   font-family: system-ui, -apple-system, sans-serif;
   animation: floatAnimation 3s ease-in-out infinite;
   transition: opacity 0.6s ease-in-out, filter 0.5s ease-in-out;
@@ -494,8 +494,7 @@ html {
 
 
 .pet-card:hover {
-  transform: translateY(-6px); 
-  box-shadow: 0 20px 40px var(--bg-orange); 
+  transform: translateY(-6px);  
 }
 .mainright:hover .pet-card{
   opacity: 1;

@@ -21,6 +21,12 @@ body, html {
   --wt-l:700;
   --wt-m:500;
   --wt-s:400;
+
+  --bg-color: #e8ccad;
+  --bg-white: #faf4ec;
+  --bg-blue: #08f6f6;
+  --bg-orange: #ff5733;
+  --bg-text-color: #3d1f00;
 }
     .preloader{
     position: fixed;
@@ -80,7 +86,7 @@ body, html {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  background-color: #f1e4f3;
+  background-color: var(--bg-color);
   align-items: center;
   padding: 1.5em;
   height: 5em ;
@@ -196,7 +202,7 @@ body, html {
     position: absolute;
     top: 60%;
     left: 50%;
-    background-color: #f9ecf3;
+    background-color:var(--bg-color);
     height: 500px;
     width: 500px;
     max-width: 90%; 
@@ -207,6 +213,7 @@ body, html {
 .about h1{
   font-family: var(--font-l);
   font-weight: var(--wt-m);
+  padding: 0.5em;
 }
 .logo-icon{
     margin-top: 3em;
@@ -424,7 +431,7 @@ footer *,
 
   .hamburger {
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 20px; 
     top: 1.5em;
     z-index: 1001;
@@ -435,7 +442,7 @@ footer *,
   }
   .hamburger-text {
     z-index: 1003;
-    position: fixed;
+    position: fixed ;
     top: 0;
     right: -100dvw; 
     width: 100dvw;
