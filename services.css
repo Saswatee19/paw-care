@@ -24,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Sora', sans-serif;
-  background-color: var(--lavender-veil);
+  background-color: white;
   color: var(--text-dark);
 }
 
@@ -153,6 +153,7 @@ body {
 }
 .services-page {
   padding: 80px 20px;
+  background-color: #e8ccad;;
 }
 
 .services-container {
@@ -163,7 +164,7 @@ body {
 .services-title {
   font-family: var(--font-l);
   text-align: center;
-  color: var(--berry-crush);
+  color: #3d1f00;
   font-size: 2.8rem;
   font-weight: var(--wt-m);
   margin-bottom: 60px;
@@ -174,13 +175,12 @@ body {
 .service-row {
   display: flex;
   align-items: center;
-  background-color: var(--white);
+  background-color: white;
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 40px;
   scroll-margin-top: 40px;
-  
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 5px solid #66bcb4;
   transition: transform 0.3s ease;
 }
 
@@ -188,7 +188,6 @@ body {
 .service-row:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 30px rgba(122, 20, 72, 0.15);
-  border: 2px solid #7A1448;
   transition: transform 0.3s ease-in, border 0.3s ease-in;
 }
 
@@ -215,7 +214,7 @@ body {
 
 .service-content h3 {
   font-family: var(--font-l);
-  color: var(--berry-crush);
+  color: #3d1f00;
   font-size: 2rem;
   font-weight: var(--wt-m);
   margin-top: 0;

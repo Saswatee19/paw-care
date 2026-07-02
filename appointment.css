@@ -5,7 +5,7 @@
 }
 body{
   font-family: "Sora", sans-serif;
-  background-color: #f1e4f3;
+  background-color: #ffffff;
   color: #2a1520;
   overflow-x: hidden;
 }
@@ -119,7 +119,7 @@ html {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  background-color: #f1e4f3;
+  background-color: #faf4ec;
   align-items: center;
   padding: 1.5em;
   height: 5em ;
@@ -193,7 +193,7 @@ main {
     padding: 0 1rem;
 }
 .appointment-page {
-    background-color: #f1e4f3;
+    background-color: white;
     min-height: 100vh;
 }
 .appointment-main {
@@ -216,19 +216,19 @@ main {
     font-family: var(--font-l);
     font-size: 3rem;
     font-weight: var(--wt-m);
-    color: #2a1520;
+    color: #3d1f00;
     margin-bottom: 0.6rem;
     letter-spacing: -0.5px;
 }
 
 .appointment-subtitle {
     font-size: 1.15rem;
-    color: #a53860;
+    color: #808080;
     font-weight: 500;
 }
 
 .emergency-notice {
-  background-color: #2a1520;
+  background-color: #3d1f00;
   color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 16px;
@@ -279,7 +279,7 @@ main {
 }
 
 .appointment-container {
-  background: linear-gradient(135deg, #c95484 0%, #a53860 50%, #8e2f52 100%);
+  background: #ec802b;
   border-radius: 24px;
   padding: 3.5rem 4rem;
   width: 100%;
@@ -298,8 +298,8 @@ main {
 
 .appointment-form legend {
   font-family: var(--font-l);
-  background-color: #2a1520;
-  color: #f1e4f3;
+  background-color: #edc55b;
+  color: #000000;
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
   font-weight: var(--wt-m);
@@ -392,7 +392,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 2rem;
 }
 .form-submit .btn-aqua {
-  background: #87f5fb !important;
+  background: #edc55b !important;
   color: #2a1520 !important;
   padding: 0.8rem 2rem;
   border-radius: 50px;
@@ -680,7 +680,7 @@ footer *,
     right: -100dvw; 
     width: 100dvw;
     height: 100dvh;
-    background-color: #f1e4f3;
+    background-color: #e8ccad;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
