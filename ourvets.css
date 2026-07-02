@@ -177,7 +177,7 @@ body {
     width: 100%;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(138, 25, 85, 0.08);
+    box-shadow: 0 8px 20px rgba(232, 204, 173, 0.20);
     border-bottom: 6px solid #c2a686;
     transition: all 0.3s ease;
     position: relative;
@@ -200,6 +200,10 @@ body {
     object-fit: cover;
     display: block;
     width: 45%; /*added*/
+}
+
+.vet-card:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .card-content {
@@ -440,7 +444,7 @@ footer *,
     right: -100dvw; 
     width: 100dvw;
     height: 100dvh;
-    background-color: #f1e4f3;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -507,6 +511,11 @@ footer *,
         width: 100%;      
         height: auto;      
         max-width: 100%;  
+    }
+
+    .vet-card,
+    .vet-card:nth-child(even) {
+        flex-direction: column;
     }
 
     .vet-intro {
