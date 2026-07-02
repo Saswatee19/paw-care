@@ -1135,7 +1135,7 @@ background: transparent !important;
 /* FOOTER */
 
 footer {
-  background-color: #2a1520 !important;
+  background-color: #3d1f00 !important;
   padding: 3rem 8vw 2rem;
 }
 
@@ -1221,7 +1221,7 @@ footer *,
 }
 
 .footer-newsletter h4 {
-  color: #ffffff !important;
+  color: #edc55b !important;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -1260,7 +1260,7 @@ footer *,
 }
 
 .newsletter-btn {
-  background-color: #87f5fb !important;
+  background-color: #edc55b !important;
   color: #ffffff;
   border: none;
   border-radius: 50px;
