@@ -112,12 +112,12 @@ body, html {
     fill: #000000;
     transition: transform 0.4s ease;
     opacity: 1;
-    transform: translateY(-20px);
+   /* transform: translateY(-20px);*/
 }
 .logo:hover .logo-icon{
     fill: #ff5733;
     cursor: pointer;
-    transform: translateY(-6px) rotate(15deg);
+    transform: translateY(-6px) rotate(-10deg)/*rotate(15deg)*/;
 }
 .logo-text:hover{
     color: #ff5733;
@@ -214,10 +214,18 @@ body, html {
   font-weight: var(--wt-m);
   padding: 0.5em;
 }
-.logo-icon{
+/*.logo-icon{
     margin-top: 3em;
+}*/
+
+.about .logo-icon {
+    margin-top: 15px; 
+    transform-origin: left bottom; 
 }
 
+.about .logo:hover .logo-icon {
+    transform: translateY(-6px) rotate(-15deg); 
+}
 
 @keyframes floatAnimation {
    0% {
@@ -420,12 +428,17 @@ footer *,
     display: none;
   }
   .navbar .logo-icon {
-    transform: translateY(0) !important;
+    /*transform: translateY(0) !important;*/
     margin-top: 0 !important;
   }
   .navbar .logo {
     display: inline-flex;
     align-items: center; 
+  }
+  .navbar .logo:hover .logo-icon,
+  .navbar .logo:active .logo-icon {
+      fill: #ff5733 !important;
+      transform: translateY(-6px) rotate(-10deg) !important;
   }
 
   .hamburger {
@@ -575,6 +588,7 @@ footer *,
         font-size: 11px;
         line-height: 1.4;
     }
+
 
     footer {
         z-index: 1001;
