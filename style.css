@@ -555,7 +555,7 @@ html {
 /* section2 */
 
 h1{
-    margin:50px;
+    margin-top:50px;
 }
 p{
     margin:20px;
@@ -826,7 +826,7 @@ p{
   text-align: center;
   color: #2a1520;
   margin-bottom: 16px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .section-sub {
@@ -1481,6 +1481,7 @@ footer *,
   }
   .our-service-heading{
     display: none;
+    opacity: 0;
   }
 
   .our-service-heading,
@@ -1541,9 +1542,9 @@ footer *,
     .helpline{
         font-size:16px;
     }
-    .our-service-heading{
+    /* .our-service-heading{
       margin-top: 20px;
-    }
+    } */
     
 
   .grid-container {
@@ -1582,7 +1583,7 @@ footer *,
   }
   .section-title {
     font-size: 36px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .section-sub {
     font-size: 15px;
