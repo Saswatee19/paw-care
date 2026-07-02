@@ -76,7 +76,7 @@ html {
 
 .navbar {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0%;
   z-index: 1000;
   display: flex;
@@ -319,7 +319,7 @@ html {
 }
 .dog-container{
   flex: 1;
-  margin-top: 6%;
+  margin-top: 8%;
   margin-left: -10%;
   height: 66%;
   width: 39%;
@@ -331,7 +331,7 @@ html {
   height: 50em;
 }
 .cat-container{
-  margin-top: -2%;
+  margin-top: 2%;
   margin-left: -5%;
   height: 70%;
   width: 39%;
