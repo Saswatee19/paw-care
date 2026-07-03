@@ -412,6 +412,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+/** Footer **/
+
 footer {
   background-color: #3d1f00 !important;
   padding: 3rem 8vw 2rem;
