@@ -245,7 +245,7 @@ body {
 }
 
 footer {
-  background-color: #2a1520 !important;
+  background-color: #3d1f00 !important;
   padding: 3rem 8vw 2rem;
 }
 
@@ -279,6 +279,7 @@ footer *,
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .footer-brand {
   gap: 1rem;
 }
@@ -325,7 +326,7 @@ footer *,
 }
 
 .footer-col h4 {
-  color: var(--bg-color) !important;
+  color: #edc55b !important;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -347,7 +348,7 @@ footer *,
 }
 
 .footer-col a:hover {
-  color: #87f5fb !important;
+  color: #66bcb4 !important;
 }
 
 .footer-newsletter {
@@ -356,7 +357,7 @@ footer *,
 }
 
 .footer-newsletter h4 {
-  color: #ffffff !important;
+  color: #edc55b !important;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -370,6 +371,8 @@ footer *,
   color: rgba(255,255,255,0.68) !important;
   margin-bottom: 24px;
   max-width: 260px;
+  margin: 0 0 24px;
+  line-height: 1.6;
 }
 
 .newsletter-form {
@@ -395,7 +398,7 @@ footer *,
 }
 
 .newsletter-btn {
-  background-color: #87f5fb !important;
+  background-color: #edc55b !important;
   color: #ffffff;
   border: none;
   border-radius: 50px;
@@ -409,7 +412,7 @@ footer *,
 }
 
 .newsletter-btn:hover {
-  background-color: #70f0f7 !important;
+  background-color: #d7b044 !important;
 }
 
 .newsletter-btn svg {
@@ -438,7 +441,7 @@ footer *,
 }
 
 .footer-bottom a {
-  color:var(--bg-color) !important;
+  color: #edc55b !important;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
