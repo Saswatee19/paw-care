@@ -8,6 +8,7 @@
   --font-l: "Galindo", sans-serif;
   --font-m: "Calistoga", sans-serif;
   --font-s: "Sora", sans-serif;
+  --font-xs: "Happy Monkey", sans-serif;
 
   /* font weights */
   --wt-l:700;
@@ -604,6 +605,9 @@ p{
 }
 .box p{
   font-size: var(--font-m);
+}
+.box h4{
+  font-family: var(--font-xs);
 }
 .wellness{
   border-bottom: 5px solid rgb(86, 172, 239);
