@@ -101,15 +101,21 @@ html {
 
 .error1{
   display: none;
-  color: rgb(242, 248, 83);
+  color: #3D1F00;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .error2{
   display: none;
-  color: rgb(242, 248, 83);
+  color: #3D1F00;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .error3{
   display: none;
-  color: rgb(242, 248, 83);
+  color: #3D1F00;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .navbar {
@@ -393,8 +399,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 2rem;
 }
 .form-submit .btn-aqua {
-  background: #edc55b !important;
-  color: #2a1520 !important;
+  background: #edc55b ;
+  color: #2a1520 ;
   padding: 0.8rem 2rem;
   border-radius: 50px;
   font-weight: 700;
