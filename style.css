@@ -573,6 +573,7 @@ p{
 }
 .service-description{
   text-align: center;
+  color: #666;
 }
 
 #main2{
@@ -717,6 +718,11 @@ p{
     text-align:center;
     font-size:55px;
     margin-top: 2em;   
+}
+.doctor-availability span{
+  color: #666;
+  font-size: 1.1rem;
+  font-family: "Sora", sans-serif;
 }
 
 .grid-container {
@@ -1537,9 +1543,16 @@ footer *,
       text-align: center;
       font-size: 36px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       font-weight: 600;
+      gap: 1em;
+    }
+    .doctor-availability-heading-responsive span{
+      color: #666;
+      font-size: 1.1rem;
+      font-family: "Sora", sans-serif;
     }
     .clinic-timing-responsive{
       opacity: 1;
