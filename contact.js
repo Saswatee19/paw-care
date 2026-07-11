@@ -68,3 +68,19 @@ form.addEventListener('submit', (dets)=>{
     }
     
 });
+
+document.querySelector('.newsletter-form-large').addEventListener('submit', function(e) {
+    e.preventDefault();
+    Toastify({
+        text: 'Subscribed successfully!',
+        duration: 3000,
+        gravity: "top",
+        position: "center",
+        escapeHTML: false,
+        style: {
+            background: "linear-gradient(to right, #047485, #74dcffb3, #047485)",
+            borderRadius: "8px",
+        }
+    }).showToast();
+    this.reset();
+});
